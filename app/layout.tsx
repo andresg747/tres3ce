@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     siteName: 'Tres3ce',
     locale: 'en-ES',
     type: 'website',
+    images: ['https://tres3ce.com/images/logo-tresce.png'],
   },
   robots: {
     index: true,
