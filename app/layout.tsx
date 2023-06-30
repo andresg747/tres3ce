@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import Sidebar from './components/sidebar';
 import { Analytics } from '@vercel/analytics/react';
+import Footer from './components/footer';
 
 const graphik = localFont({
   src: [
@@ -23,18 +24,15 @@ const graphik = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.io'),
-  title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
-  },
-  description: 'Developer, writer, and creator.',
+  metadataBase: new URL('https://tres3ce.com'),
+  title: 'Tres3ce',
+  description: 'Crea, comunica, comparte valor.',
   openGraph: {
-    title: 'Lee Robinson',
-    description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
-    siteName: 'Lee Robinson',
-    locale: 'en-US',
+    title: 'Tres3ce',
+    description: 'Crea, comunica, comparte valor',
+    url: 'https://tres3ce.com',
+    siteName: 'Tres3ce',
+    locale: 'en-ES',
     type: 'website',
   },
   robots: {
@@ -48,14 +46,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  twitter: {
-    title: 'Lee Robinson',
-    card: 'summary_large_image',
-  },
-  verification: {
-    google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-    yandex: '14d2e73487fa6c71',
-  },
+  viewport: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
 };
 
 export default function RootLayout({
@@ -71,12 +62,13 @@ export default function RootLayout({
         graphik.variable
       )}
     >
-      <body className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+      <body className="antialiased flex flex-col md:flex-row lg:mx-auto h-screen">
+        <main className="flex-auto min-w-0 mt-6 flex flex-col px-8 md:px-0 h-screen">
           <Sidebar />
           {children}
           <Analytics />
         </main>
+        <Footer />
       </body>
     </html>
   );

@@ -7,14 +7,17 @@ import { LayoutGroup, motion } from 'framer-motion';
 
 const navItems = {
   '/': {
-    name: 'home',
+    name: 'inicio',
   },
-  '/blog': {
-    name: 'blog',
+  '/contact': {
+    name: 'contacto',
   },
-  '/guestbook': {
-    name: 'guestbook',
-  },
+  // '/blog': {
+  //   name: 'blog',
+  // },
+  // '/guestbook': {
+  //   name: 'guestbook',
+  // },
 };
 
 export default function Navbar() {
