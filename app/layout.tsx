@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   description: 'Crea, comunica, comparte valor.',
   openGraph: {
     title: 'Tres3ce',
-    description: 'Crea, comunica, comparte valor',
+    description: 'Crea, comunica, comparte valor.',
     url: 'https://tres3ce.com',
     siteName: 'Tres3ce',
     locale: 'en-ES',
