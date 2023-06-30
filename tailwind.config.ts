@@ -8,6 +8,16 @@ export default {
     './content/**/*.mdx',
   ],
   theme: {
+    height: () => ({
+      auto: 'auto',
+      full: '100%',
+      screen: 'calc(var(--vh) * 100)',
+    }),
+    minHeight: () => ({
+      '0': '0',
+      full: '100%',
+      screen: 'calc(var(--vh) * 100)',
+    }),
     extend: {
       fontFamily: {
         sans: ['var(--font-graphik)'],
